@@ -6,7 +6,7 @@ public typealias PerformRequestClosureType = (_ requestReference: CFDictionary, 
 
 
 // MARK: - Locksmith
-public struct Locksmith {
+public struct EnnoWalletKeyChain {
     public static func loadDataForUserAccount(userAccount: String, inService service: String = LocksmithDefaultService) -> [String: Any]? {
         struct ReadRequest: GenericPasswordSecureStorable, ReadableSecureStorable {
             let service: String
